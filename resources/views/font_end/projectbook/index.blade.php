@@ -14,16 +14,19 @@
             <img src="{{ asset('back_end/image/aft_logo_m.png') }}" alt=""> <br><br>
             <h4>สรุปเล่มโครงการ</h4>
             <h4>อวท.วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์ ประจำปีการศึษา ๒๕๖๗</h4>
-            <div class="row mt-3 text-center">
-                @foreach ($pro as $p)
-                    <div class="col-4 text-center">
-                        <a href="{{ asset('back_end/image/projectbook/pdf/' . $p->file) }}" target="_blank">
-                            <img src="{{ asset('back_end/image/projectbook/' . $p->image) }}" width="230" height="280"
-                                alt="">
-                            <p><h6>{{ $p->name }}</h6></p>
-                        </a>
-                    </div>
-                @endforeach
+            <div class="row">
+                <div class="col">
+                    <a href="{{ url('bookdepartment/academic') }}">
+                        <img src="{{ asset('font_end/image/novel.png') }}" alt="">
+                        <h5>เล่มสรุปโครงการวิชาการ (ชมรมวิชาชีพ)</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="{{ url('bookdepartment/activity') }}">
+                        <img src="{{ asset('font_end/image/novel.png') }}" alt="">
+                        <h5>เล่มสรุปโครงการกิจกรรม (อวท.)</h5>
+                    </a>
+                </div>
             </div>
         </div> <br><br><br>
     </div>

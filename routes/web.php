@@ -317,5 +317,6 @@ Route::post('admin/bookdepartment/update/{id}','Admin\BookdepartmemtController@u
 Route::get('admin/bookdepartment/delete/{id}','Admin\BookdepartmemtController@delete');
 
 // อัพเล่มโครงการชมรมวิชาชีพ หน้าบ้าน
-Route::get('bookdepartment/index','BookdepartmemtController@indexfront');
+Route::get('bookdepartment/academic','ProjectController@academic');
+Route::get('bookdepartment/activity','ProjectController@activity');
 
