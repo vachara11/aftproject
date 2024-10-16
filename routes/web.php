@@ -297,7 +297,7 @@ Route::post('/admin/project/update/{id}','Admin\ProjectController@update');
 Route::get('/admin/project/delete/{id}','Admin\ProjectController@delete');
 Route::post('/admin/project/pass/{id}','Admin\ProjectController@pass');
 
-//อัพเล่มโครงการ หลังบ้าน
+//อัพเล่มโครงการvวท. หลังบ้าน
 Route::get('/admin/projectbook/index','Admin\ProjcetbookController@index');
 Route::get('/admin/projectbook/insert','Admin\ProjcetbookController@insert');
 Route::post('admin/projectbook/create','Admin\ProjcetbookController@create');
@@ -305,6 +305,17 @@ Route::get('admin/projectbook/edit/{id}','Admin\ProjcetbookController@edit');
 Route::post('admin/projectbook/update/{id}','Admin\ProjcetbookController@update');
 Route::get('admin/projectbook/delete/{id}','Admin\ProjcetbookController@delete');
 
-// อัพเล่มโครงการ หน้าบ้าน
+// อัพเล่มโครงการอวท. หน้าบ้าน
 Route::get('projectpage/index','ProjectController@index');
+
+//อัพเล่มโครงการชมรมวิชาชีพ หลังบ้าน
+Route::get('/admin/bookdepartment/index','Admin\BookdepartmemtController@index');
+Route::get('/admin/bookdepartment/insert','Admin\BookdepartmemtController@insert');
+Route::post('admin/bookdepartment/create','Admin\BookdepartmemtController@create');
+Route::get('admin/bookdepartment/edit/{id}','Admin\BookdepartmemtController@edit');
+Route::post('admin/bookdepartment/update/{id}','Admin\BookdepartmemtController@update');
+Route::get('admin/bookdepartment/delete/{id}','Admin\BookdepartmemtController@delete');
+
+// อัพเล่มโครงการชมรมวิชาชีพ หน้าบ้าน
+Route::get('bookdepartment/index','BookdepartmemtController@indexfront');
 

@@ -184,7 +184,15 @@
                                 <a href="{{ url('/admin/projectbook/index') }}" class="nav-link">
                                     <i class="nav-icon far fa fa-book" aria-hidden="true"></i>
                                     <p>
-                                        อัพเล่มแสกนโครงการ
+                                        แสกนโครงการอวท.
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/bookdepartment/index') }}" class="nav-link">
+                                    <i class="nav-icon far fa fa-book" aria-hidden="true"></i>
+                                    <p>
+                                        แสกนโครงการชมรม
                                     </p>
                                 </a>
                             </li>
